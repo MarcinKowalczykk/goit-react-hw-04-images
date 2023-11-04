@@ -1,0 +1,138 @@
+ul{
+    list-style: none;
+}
+li{
+    gap: 10px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3321b9;
+    padding: 10px;
+    
+  }
+  .form {
+    display: flex;
+    flex: 1; 
+    margin-right: 10px; 
+    justify-content: center;
+  }
+  .input-container {
+    display: flex;
+    align-items: center; 
+    padding: 5px;
+    background-color: white;
+    border-radius: 4px;
+    width: 40%;
+  }
+  .input {
+    flex: 1;
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px;
+    width: 40%;
+    font-size: 16px;
+  }
+  .input:focus {
+    outline: none; /* Remove the outline (if present) */
+    border: none;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery-item {
+    width: calc(25% - 10px); 
+    margin-bottom: 10px;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+  }
+  
+  .button {
+    background-color: #3321b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+  }
+  .modal img {
+    max-width: 100%;
+    max-height: 80vh; 
+  }
+  /* .SearchForm-button {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    outline: none;
+  } */
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  /* Style the search icon image */
+  .search-button img {
+    width: 18px;
+    height: 18px;
+    
+  }
+  
